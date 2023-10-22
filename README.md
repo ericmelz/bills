@@ -10,10 +10,14 @@ cd bills
 python3 -m venv venv
 . /venv/bin/activate
 pip install -r requirements.txt
-
+python -m ipykernel install --user --name=bills
+jupyter notebook
 ```
 
-`secrets.py`
+You will need to create a file called `secrets.py` that contains
+your credentials and other bits of information specific to your situation.
+
+`secrets.py`:
 download_dir='</Path/to/statements/directory/>'
 wellsfargo_user='<user name>'
 wellsfargo_password='<password>'
