@@ -18,6 +18,7 @@ You will need to create a file called `secrets.py` that contains
 your credentials and other bits of information specific to your situation.
 
 `secrets.py`:
+```
 download_dir='</Path/to/statements/directory/>'
 wellsfargo_user='<user name>'
 wellsfargo_password='<password>'
@@ -25,4 +26,4 @@ wellsfargo_accounts = [
     '<account name 1>',
     '<account name 2>',
 ]
-
+```
