@@ -11,7 +11,6 @@ def move_from_download_to_staging(input_regex, output_regex, download_dir,
                                   account_dirs, account,
                                   allow_patterns):
     # Ensure expected staging the directory exists
-    print(f'{account_dirs=}')
     account_dir = Path(staging_dir) / account_dirs[account]
     os.makedirs(account_dir, exist_ok=True)
     
